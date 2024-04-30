@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>FBI System</title>
+
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+    />
+  </head>
+
+  <link rel="stylesheet" href="./assets/css/style.css">
+
+  <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+
+  <script defer src="./assets/js/index.js"></script>
+
+  <body>
+      <h1>&#128374; FBI System &#128374;</h1>
+    <div class="card bg-dark text-center">
+      <div class="card-body">
+        <form >
+          <h1>&#128372;&#128372;&#128372;</h1>
+          <h5 class="card-title text-center">Ingrese sus credenciales</h5>
+          <div class="row d-flex align-items-center mb-1">
+            <div class="col-12">Email:</div>
+            <div class="col-7 m-auto"><input type="text" id="email" name="email" class="form-control" /></div>
+          </div>
+          <div class="row d-flex align-items-center">
+            <div class="col-12">Password:</div>
+            <div class="col-7 m-auto"><input type="text" id="password" name="password" class="form-control" /></div>
+          </div>
+          <button id="ingresar" class="btn bg-light my-3">Ingresar &#128373;</button>
+        </form>
+      </div>
+    </div>
+
+<!-- Ventana modal para mostrar datos -->
+<div id="myModal" class="modal">
+  <div class="modal-content">
+    <span class="close">&times;</span>
+    <div id="modalContent">
+      <!-- Contenido HTML dinámico se agregará aquí -->
+    </div>
+  </div>
+</div>
+
+</body>
+
+  
+</html>

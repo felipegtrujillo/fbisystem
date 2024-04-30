@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=h2, initial-scale=1.0" />
+    <title>Bienvenido</title>
+    <link rel="stylesheet" href="./assets/css/style.css" />
+  </head>
+  <body>
+    <h1>Bienvenido</h1>
+    <p id="parrafo"></p>
+
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        // Código que se ejecutará una vez que se haya cargado completamente la página
+        let parrafo = document.getElementById("parrafo");
+
+        const correo = sessionStorage.getItem("correo");
+        const respuesta = sessionStorage.getItem("acceso");
+        const urlCompleta = window.location.href;
+
+        if (respuesta === "OK") {
+          parrafo.innerHTML = `Bienvenido agente ${correo}`;
+        } else {
+          parrafo.innerHTML = `¡¡¡¡ ACCESO RESTRINGIDO !!!`;
+        }
+      });
+    </script>
+  </body>
+</html>
